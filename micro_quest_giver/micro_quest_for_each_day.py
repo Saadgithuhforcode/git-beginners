@@ -46,3 +46,28 @@ def get_quest():
 
     random_category = random.choice(list(QUEST_POOL.keys()))
     random_quest = random.choice(QUEST_POOL[random_category])
+
+    save_data(today_str, random_category, random_quest)
+
+    return random_category, random_quest, True
+
+def main():
+    #the main chunk 
+    category, quests, is_new = get_quest()
+
+    print("=" *40)
+
+    if is_new:
+        print("📜 A New day has dawned. The new quest is: ")
+    else:
+        print("⚔️ Current quest still active. Active quest: ")
+
+    print("=" *40)
+
+    print(f"The category is {category}")
+    print(f"The Quest is {quests}")
+
+    print("=" *40)
+
+if __name__ == "__main__":
+    main()

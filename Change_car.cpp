@@ -54,18 +54,18 @@ int main(){
 
 void printCar(Car &car){
 
-std::cout << "The car's name is " <<car.name << '\n';
-std::cout << "The car was made in " <<car.year << '\n';
+std::cout << "The car's name is " << car.name << '\n';
+std::cout << "The car was made in " << car.year << '\n';
 std::cout << "The car's current colour is " << car.colour << '\n';
 std::cout << '\n';
 }
 
 void showAfterall(Car &car){
 
-std::cout << "The car's name is " <<car.name << '\n';
-std::cout << "The car was made in " <<car.year << '\n';
+std::cout << "The car's name is " << car.name << '\n';
+std::cout << "The car was made in " << car.year << '\n';
 std::cout << "The car's current colour is " << car.colour << '\n';
-std::cout << "The car has been driven for " <<car.miles << '\n';
+std::cout << "The car has been driven for " << car.miles << '\n';
 std::cout << '\n';
 }
 
